@@ -9,15 +9,9 @@
 int main(void)
 {
 if (n > 0)
-{
 printf("is positive\n");
-return (printf); }
-if (n == 0)
-{
+else if (n == 0)
 printf("is zero\n");
-return (printf); }
-if (n < 0)
-{
+else
 printf("is negative\n");
-return (printf); }
-return ("0"printf); }
+return (0"printf"); }
