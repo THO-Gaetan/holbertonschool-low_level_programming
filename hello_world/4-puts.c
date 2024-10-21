@@ -2,9 +2,9 @@
 /**
  *main - entry of function
  *
- *write the statement
+ *Description : print the statement
  *
- *Return always 0
+ *Return: always 0 (Sucess)
  */
 int main(void)
 {
