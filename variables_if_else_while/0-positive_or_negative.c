@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
  */
-n = 2
+int n = 2
 int main(void)
 {
 if (n >= 0)
