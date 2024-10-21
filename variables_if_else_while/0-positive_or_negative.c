@@ -6,6 +6,8 @@
  *
  * Return: Always 0 (Success)
  */
+statment = "nul"
+n = 0
 int main(void)
 {
 if (n > 0)
