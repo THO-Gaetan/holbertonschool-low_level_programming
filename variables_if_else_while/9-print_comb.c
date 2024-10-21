@@ -14,7 +14,7 @@ while (i <= 57)
 {
 putchar(i);
 i++;
-if (i != 57)
+if (i != 58)
 {
 putchar(v);
 putchar(' ');
