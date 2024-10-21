@@ -9,7 +9,7 @@
 int main(void)
 {
 int n = 0;
-char statment[];
+char statment[20];
 if (n > 0)
 {
 strcpy(statment, "is positive\n"); }
