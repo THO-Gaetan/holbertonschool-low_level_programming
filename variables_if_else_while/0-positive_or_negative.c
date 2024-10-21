@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point of the program
  *
@@ -8,15 +10,17 @@
  */
 int main(void)
 {
-int n = 0;
-char statment[20];
+int n;
+
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
-strcpy(statment, "is positive\n"); }
+printf("is positive\n"); }
 else if (n == 0)
 {
-strcpy(statment, "is zero\n"); }
+printf("is zero\n"); }
 else
 {
-strcpy(statment, "is negative\n"); }
+printf("is negative\n"); }
 return ("%s\n", statment); }
