@@ -9,7 +9,7 @@
 int main(void)
 {
 int n = 0;
-char statment = nul;
+char statment = 1;
 if (n > 0)
 {
 statment = printf("0 is positive\n"); }
