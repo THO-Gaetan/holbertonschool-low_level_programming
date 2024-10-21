@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-int n = 0
-statment = "nul"
+int n = 0; 
+statment = "nul";
 if (n > 0)
 {
 statment = printf("0 is positive\n");
