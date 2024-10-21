@@ -23,4 +23,4 @@ printf("is zero\n"); }
 else
 {
 printf("is negative\n"); }
-return ("%s\n", statment); }
+return (0); }
