@@ -13,5 +13,5 @@ statment = printf("0 is positive\n");
 else if (n == 0)
 statment = printf("0 is zero\n");
 else
-statment = printf("0 is negative\n");
-return (statment); }
+statement = printf("0 is negative\n");
+return printf(); }
