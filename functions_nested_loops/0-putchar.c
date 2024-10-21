@@ -17,5 +17,5 @@ while (*str)
 {
 _putchar(*str++);
 }
-putcher('\n');
+putchar('\n');
 return (0); }
