@@ -1,5 +1,12 @@
 #include <stdio.h>
-int main(void)  /*Starting a function*/
+/**
+ *main - entry of function
+ *
+ *write the statement
+ *
+ *Return always 0
+ */
+int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle"); /*write*/
-return (0); /*end of the function returning 0*/}
+puts("\"Programming is like building a multilingual puzzle");
+return (0); }
