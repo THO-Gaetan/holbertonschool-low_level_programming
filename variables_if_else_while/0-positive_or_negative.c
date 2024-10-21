@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-int n;
+int n = 0;
 int statment;
 if (n > 0)
 {
