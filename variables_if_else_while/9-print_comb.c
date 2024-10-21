@@ -16,7 +16,7 @@ putchar(i);
 i++;
 if (i != 57)
 {
-putchar("v");
+putchar(v);
 putchar(' ');
 }
 }
