@@ -12,10 +12,9 @@
 int _putchar(char c);
 int main(void)
 {
-const char *str = "_putchar";
+const char *str = "_putchar\n";
 while (*str)
 {
 _putchar(*str++);
 }
-putchar('\n');
 return (0); }
