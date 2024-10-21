@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-int n = 0;
-char statment[] = "Bonjour";
+int n;
+int statment;
 if (n > 0)
 {
 statment = printf("is positive\n"); }
