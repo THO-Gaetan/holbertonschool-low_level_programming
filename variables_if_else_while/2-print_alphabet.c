@@ -8,6 +8,7 @@
  */
 int main(void)
 {
+  int i;
   while(i = 96; i <= 122)
     {
       putchar(i);
