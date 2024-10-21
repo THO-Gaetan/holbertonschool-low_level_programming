@@ -9,14 +9,14 @@
 int main(void)
 {
 int n = 0;
-int statment;
+char statment[];
 if (n > 0)
 {
-statment = printf("is positive\n"); }
+strcpy(statment, "is positive\n"); }
 else if (n == 0)
 {
-statment = printf("is zero\n"); }
+strcpy(statment, "is zero\n"); }
 else
 {
-statment = printf("is negative\n"); }
-return (statment); }
+strcpy(statment, "is negative\n"); }
+return ("%s\n", statment); }
