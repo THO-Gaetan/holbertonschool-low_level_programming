@@ -1,1 +1,2 @@
-puts("\"Programming is like building a multilingual puzzle"*s)
+#include <stdio.h>
+puts("\"Programming is like building a multilingual puzzle")
