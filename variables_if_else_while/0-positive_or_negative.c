@@ -12,11 +12,11 @@ int n = 0;
 char statment = 1;
 if (n > 0)
 {
-statment = printf("0 is positive\n"); }
+statment = printf("is positive\n"); }
 else if (n == 0)
 {
-statment = printf("0 is zero\n"); }
+statment = printf("is zero\n"); }
 else
 {
-statment = printf("0 is negative\n"); }
+statment = printf("is negative\n"); }
 return (statment); }
