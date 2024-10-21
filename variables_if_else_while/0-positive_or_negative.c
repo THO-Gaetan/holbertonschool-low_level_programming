@@ -8,13 +8,15 @@
  */
 int main(void)
 {
-int n = 0; 
-char statment = "nul";
+int n = 0;
+char statment = nul;
 if (n > 0)
 {
-statment = printf("0 is positive\n");
+statment = printf("0 is positive\n"); }
 else if (n == 0)
-statment = printf("0 is zero\n");
+{
+statment = printf("0 is zero\n"); }
 else
+{
 statment = printf("0 is negative\n"); }
 return (statment); }
