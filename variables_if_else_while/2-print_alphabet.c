@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-  int i = 96;
-  while( i <= 122)
-    {
-      putchar(i);
-      i++;
-    }
-  return (0);
+int i = 97;
+while( i <= 122)
+{
+putchar(i);
+i++;
+}
+return (0);
 }
