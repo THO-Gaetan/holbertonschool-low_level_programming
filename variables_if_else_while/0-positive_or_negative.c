@@ -9,7 +9,7 @@
 int main(void)
 {
 int n = 0;
-char statment = 1;
+char statment[] = "Bonjour";
 if (n > 0)
 {
 statment = printf("is positive\n"); }
