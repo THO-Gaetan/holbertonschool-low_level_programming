@@ -6,13 +6,18 @@
  *
  * Return: Always 0 (Success)
  */
-int n = 2;
 int main(void)
 {
-if (n >= 0)
-printf("is positive");
-else if (n = 0)
-printf("is zero");
-else
-printf("is negative");
-return (0); }
+if (n > 0)
+{
+printf("is positive\n");
+return (printf); }
+if (n == 0)
+{
+printf("is zero\n");
+return (printf); }
+if (n < 0)
+{
+printf("is negative\n");
+return (printf); }
+return ("0"printf); }
