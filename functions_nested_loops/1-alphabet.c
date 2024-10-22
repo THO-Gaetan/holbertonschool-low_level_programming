@@ -13,9 +13,11 @@
 */
 void print_alphabet(void)
 {
-  const char *str = "abcdefghijklmnopqrstuvwxyz\n";
-  while (*str)
+  char str = "a"
+  while (str <= z)
     {
-      _putchar(*str++);
+      _putchar(str);
+      str++;
     }
+  _putchar('\n');
   print_alphabet(); }
