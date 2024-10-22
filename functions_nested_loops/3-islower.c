@@ -8,12 +8,13 @@ int _islower(int c)
     {
       if (*str == 'c')
 	{
-	  return (0);
-	}
-      else
-	{
 	  return (1);
 	}
+      else if (*str != 'c')
+	{
+	  return (0);
+	}
+      *str++;
     }
   return (c);
 }
