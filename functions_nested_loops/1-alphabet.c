@@ -18,5 +18,5 @@ int main(void)
     {
       _putchar(*str++);
     }
-  print_alphabet(void);
+  print_alphabet();
  return (0); }
