@@ -18,4 +18,4 @@ int main(void)
     {
       _putchar(*str++);
     }
-  print_alphabet(0); }
+  print_alphabet(); }
