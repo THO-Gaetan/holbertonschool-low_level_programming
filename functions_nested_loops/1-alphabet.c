@@ -1,3 +1,4 @@
+#include <fonctions.h>
 #include <stdio.h>
 /**
 * _putchar - writes a character to stdout
