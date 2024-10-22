@@ -3,18 +3,15 @@
 
 int _islower(int c)
 {
-  const char *str = "abcdefghijklmnopqrstuvwxyz";
-  while (*str)
-    {
-      if (*str == 'c')
+  char c = 'c'
+    if (islower(c))
 	{
 	  return (1);
 	}
-      else if (*str != 'c')
+      else
 	{
 	  return (0);
 	}
-      str++;
     }
   return (c);
 }
