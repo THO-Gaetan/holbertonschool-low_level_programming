@@ -18,4 +18,4 @@ void print_alphabet(void)
     {
       _putchar(*str++);
     }
-  return (); }
+  print_alphabet(); }
