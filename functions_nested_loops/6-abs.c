@@ -4,6 +4,6 @@
 
 int _abs(int i)
 {
-  _abs('r');
+  _abs(i);
   return (0);
 }
