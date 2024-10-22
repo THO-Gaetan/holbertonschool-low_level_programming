@@ -13,7 +13,7 @@
 int _putchar(char c);
 int main(void)
 {
-const char *str = "abcdefghijklmnopqrstuvwxyz\n"
+  const char *str = "abcdefghijklmnopqrstuvwxyz\n";
   while (*str)
     {
       _putchar(*str);
