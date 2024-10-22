@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* _putchar - writes a character to stdout
-* @c: the character to be written
-*
-* Description:
-* This function writes a single character to the standard output stream
-* It takes a character as an argument and returns an integer value represente
-* the character written. If an error occurs, it returns EOF (End Of File).
-*
-* Return: Always 0 (Success)
-*/
+ * print_alphabet - Prints the lowercase alphabet
+ *
+ * Description: This function prints all lowercase letters
+ * of the English alphabet from 'a' to 'z', followed by a newline.
+ * It uses the _putchar function to print each character.
+ *
+ * Return: void
+ */
 void print_alphabet(void)
 {
 char str;
