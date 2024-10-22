@@ -11,12 +11,11 @@
 *
 * Return: Always 0 (Success)
 */
-int main(void)
+void print_alphabet(void)
 {
   const char *str = "abcdefghijklmnopqrstuvwxyz\n";
   while (*str)
     {
       _putchar(*str++);
     }
-  print_alphabet();
   return (0); }
