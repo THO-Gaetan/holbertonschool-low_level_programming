@@ -3,7 +3,7 @@
 
 int _islower(int c)
 {
-    if (islower(c))
+    if (_islower(c))
 	{
 	  return (1);
 	}
@@ -11,6 +11,5 @@ int _islower(int c)
 	{
 	  return (0);
 	}
-    }
   return (c);
 }
