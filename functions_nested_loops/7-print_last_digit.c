@@ -7,7 +7,7 @@ int n;
 n = i % 10;
 if (n < 0)
 {
-n = -n
+n = -n;
 }
 _putchar(n + '0');
 return (n);
