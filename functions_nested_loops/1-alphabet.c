@@ -18,6 +18,7 @@ int main(void)
   while (*str)
     {
       _putchar(*str);
+      print_alphabet;
       *str++;
     }
  return (0); }
