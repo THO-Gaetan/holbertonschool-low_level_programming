@@ -4,6 +4,9 @@
 
 int _abs(int i)
 {
-  _abs(i);
-  return (0);
+  if (i >= 0)
+    {
+      return (n);
+    }
+  return (-n);
 }
