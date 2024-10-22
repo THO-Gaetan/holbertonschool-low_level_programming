@@ -17,8 +17,7 @@ int main(void)
   const char *str = "abcdefghijklmnopqrstuvwxyz\n";
   while (*str)
     {
-      _putchar(*str);
+      _putchar(*str++);
       print_alphabet();
-      *str++;
     }
  return (0); }
