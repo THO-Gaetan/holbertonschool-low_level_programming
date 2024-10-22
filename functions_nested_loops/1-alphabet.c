@@ -1,4 +1,3 @@
-#include <main.h>
 #include <stdio.h>
 /**
 * _putchar - writes a character to stdout
@@ -19,6 +18,6 @@ int main(void)
   while (*str)
     {
       _putchar(*str++);
-      print_alphabet();
     }
+  print_alphabet();
  return (0); }
