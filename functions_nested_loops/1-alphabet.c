@@ -14,7 +14,7 @@
 void print_alphabet(void)
 {
   char str;
-  for (str = "a"; str <= "z"; str++)
+  for (str = 'a'; str <= 'z'; str++)
     {
       _putchar(str);
     }
