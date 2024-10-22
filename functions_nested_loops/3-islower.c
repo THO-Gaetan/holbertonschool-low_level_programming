@@ -14,7 +14,7 @@ int _islower(int c)
 	{
 	  return (0);
 	}
-      *str++;
+      str++;
     }
   return (c);
 }
