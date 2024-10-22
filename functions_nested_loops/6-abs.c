@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include "main.h"
 
-int _abs(int)
+int _abs(int r)
 {
-  _abs(int);
+  _abs('r');
   return (0);
 }
