@@ -4,6 +4,7 @@
 void times_table(void)
 {
   int table, result;
+  const char *space = " ";
   table = 0;
   result = 0;
   while (table <= 9)
@@ -14,7 +15,7 @@ void times_table(void)
 	  if (result != 9)
 	    {
 	  _putchar(44);
-	  _putchar(" ");
+	  _putchar(space);
 	    }
 	  result++;
 	}
