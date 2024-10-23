@@ -19,6 +19,7 @@ _putchar('\n');
 	  minute++;
 	}
       hour++;
+      minute = 0;
 	}
   return;
 }
