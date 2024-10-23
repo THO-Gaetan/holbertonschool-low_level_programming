@@ -15,7 +15,7 @@ void times_table(void)
 	  if (result != 9)
 	    {
 	  _putchar(44);
-	  _putchar("space");
+	  _putchar( );
 	    }
 	  result++;
 	}
