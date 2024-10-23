@@ -12,7 +12,7 @@ void times_table(void)
       while (base <= 9)
 	{
 	  result = table * base;
-	  if (base != 9 && result != 0)
+	  if (base <= 9 && base != 0)
 	    {
 	  _putchar(44);
 	  _putchar(32);
