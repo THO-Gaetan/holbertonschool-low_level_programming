@@ -10,7 +10,7 @@ void times_table(void)
     {
       while (result <= 9)
 	{
-	  _putchar(result, '0');
+	  _putchar(result + '0');
 	  if (result != 9)
 	    {
 	  _putchar(", ");
