@@ -23,7 +23,7 @@ if (n < 0)
 {
 _putchar('-');
 n = -n;
-neg++; }
+neg = 1; }
 if (n < 10)
 {
 _putchar(n + '0'); }
@@ -40,7 +40,7 @@ _putchar(44);
 _putchar(32);
 if (neg == 1)
 {
-neg--;
+neg = 0;
 n = -n; } }
 if (n < 98)
 {
