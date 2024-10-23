@@ -3,7 +3,7 @@
 
 void times_table(void)
 {
-  int table, result;
+  int table, result, base;
   table = 0;
   base = 0;
   result = 0;
