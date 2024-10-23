@@ -26,6 +26,8 @@ void print_to_98(int n)
     }
 	  n = -n;
 	}
+      if (n >= 0)
+	{
   if (n < 10)
     {
       _putchar(n + '0');
@@ -46,6 +48,7 @@ void print_to_98(int n)
       _putchar(44);
       _putchar(32);
     }
+	}
   if (n < 98)
     {
     n++;
