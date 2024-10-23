@@ -19,7 +19,7 @@ while (table <= 9)
 {
 while (base <= 9)
 {
-result = table * base;
+result = table *base;
 if (base <= 9 && base != 0)
 {
 _putchar(44);
@@ -32,7 +32,8 @@ if (base != 0)
 _putchar(32);
 _putchar(result + '0');
 }
-else {
+else
+{
 _putchar(result + '0');
 }
 }
