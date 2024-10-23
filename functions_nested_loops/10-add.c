@@ -3,7 +3,7 @@
 
 int add(int a,int b)
 {
-  a = a + b;
+  a = add(a, b);
   _putchar((a / 10) + '0');
   _putchar((a % 10) + '0');
   return (0);
