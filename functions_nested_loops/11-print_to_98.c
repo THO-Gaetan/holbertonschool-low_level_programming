@@ -14,12 +14,18 @@ void print_to_98(int n)
       _putchar((n / 10) + '0');
       _putchar((n % 10) + '0');
     }
-  if (n <= 97)
+  if (n != 98)
     {
       _putchar(44);
       _putchar(32);
     }
-  n++;
+  if (n < 98)
+    {
+    n++;
+    }
+  else if (n > 98)
+    {
+    n--;
     }
   _putchar('\n');
   return;
