@@ -5,7 +5,7 @@
 void jack_bauer(void)
 {
   time_t minute;
-  minute = time(NUL);
+  minute = time(NULL);
   _putchar(minute);
   return;
 }
