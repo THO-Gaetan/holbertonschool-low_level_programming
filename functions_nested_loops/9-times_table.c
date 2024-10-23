@@ -11,7 +11,7 @@ void times_table(void)
     {
       while (base <= 9)
 	{
-	  result ⁼ table * base;
+	  result = table * base;
 	  _putchar(result + '0');
 	  if (base != 9)
 	    {
@@ -20,6 +20,7 @@ void times_table(void)
 	    }
 	  base++;
 	}
+      _putchar('\n');
       table++;
     }
   return;
