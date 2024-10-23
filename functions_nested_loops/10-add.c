@@ -4,7 +4,7 @@
 int add(int a,int b)
 {
   int  c = a + b;
-  if (c $10)
+  if (c < 10)
     {
     _putchar(c + '0');
     }
