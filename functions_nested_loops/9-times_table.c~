@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include "main.h"
+
+void times_table(void)
+{
+  int table, result;
+  table = 0;
+  while(table <= 9)
+    {
+      
+      
