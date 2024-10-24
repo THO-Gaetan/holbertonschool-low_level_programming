@@ -12,6 +12,7 @@ int main(void)
 	  while (i <=1)
 	    {
 	      putchar(two_digit * i);
+	      i++;
 	    }
 	}
       else
