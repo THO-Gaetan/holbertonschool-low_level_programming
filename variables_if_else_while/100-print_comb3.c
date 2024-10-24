@@ -7,8 +7,11 @@ int main(void)
     {
       if (two_digit < 10)
 	{
-	  return (0);
-          putchar(two_digit + '0');
+	  i = 0;
+	  while (i <=1)
+	    {
+	      putchar(two_digit * i);
+	    }
 	}
       else
 	{
