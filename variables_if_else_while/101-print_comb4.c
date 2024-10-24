@@ -14,6 +14,11 @@ int main(void)
 	      putchar(third + '0');
 	      putchar(second + '0');
 	      putchar(one + '0');
+              if (!(third == 7 && second == 8 && one == 9))
+		{
+		  putchar(',');
+		  putchar(' ');
+		}
 	      one++;
 	    }
 	  second++;
