@@ -11,7 +11,7 @@ int main(void)
       {
 	putchar(second + '0');
 	putchar(one + '0');
-	if (second != 8 && one != 9)
+	if (!(second == 8 && one == 9))
 	  {
 	    putchar(',');
 	    putchar(' ');
