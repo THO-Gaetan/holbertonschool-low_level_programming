@@ -12,11 +12,11 @@ int main(void)
 	putchar(second + '0');
 	putchar(one + '0');
 	one++;
-      }
-    if (second != 8 && one != 9)
-      {
-	putchar(',');
-	putchar(' ');
+	if (second != 8 && one != 9)
+	  {
+	    putchar(',');
+	    putchar(' ');
+	  }
       }
     second++;
   }
