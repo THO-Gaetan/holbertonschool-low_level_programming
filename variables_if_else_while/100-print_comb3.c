@@ -3,6 +3,7 @@
 int main(void)
 {
   int two_digit;
+  int i;
   for (two_digit = 01; two_digit <= 89; two_digit++)
     {
       if (two_digit < 10)
