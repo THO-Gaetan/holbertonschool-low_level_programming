@@ -11,7 +11,7 @@ int main(void)
 	  i = 0;
 	  while (i <=1)
 	    {
-	      putchar(two_digit * i);
+	      putchar(two_digit * 'i');
 	      i++;
 	    }
 	}
