@@ -3,6 +3,7 @@
 int main(void)
 {
   int third, second, one;
+  third = 0;
   while (third <= 7)
     {
       second = third + 1;
