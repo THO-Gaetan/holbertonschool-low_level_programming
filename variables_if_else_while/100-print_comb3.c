@@ -6,7 +6,7 @@ int main(void)
   second = 0;
   while (second <= 8)
   {
-    one = 1;
+    one = second + 1;
     while (one <= 9)
       {
 	putchar(second + '0');
