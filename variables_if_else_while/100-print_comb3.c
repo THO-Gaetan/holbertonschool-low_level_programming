@@ -13,6 +13,7 @@ int main(void)
 	{
 	  putchar((two_digit / 10) + '0');
 	  putchar((two_digit % 10) + '0');
+	}
       if ( two_digit !=89)
 	{
 	  putchar(44);
