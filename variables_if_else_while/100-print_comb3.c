@@ -7,7 +7,7 @@ int main(void)
     {
       if (two_digit < 10)
 	{
-          putchar("0"two_digit + "0");
+          putchar(two_digit + "0");
 	}
       else
 	{
