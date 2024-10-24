@@ -7,9 +7,12 @@ int main(void)
     {
       if (two_digit < 10)
 	{
-	  
-      putchar(two_digit + "00");
+          putchar(48, two_digit + "0");
 	}
+      else
+	{
+	  putchar((two_digit / 10) + '0');
+	  putchar((two_digit % 10) + '0');
       if ( two_digit !=89)
 	{
 	  putchar(44);
