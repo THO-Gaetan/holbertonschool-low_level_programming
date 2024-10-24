@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <unistd.h>
 
 int main(void)
 {
   const char *dora = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    fwrite(1,dora,1);
+  write(1,dora,strlen(dora));
   return (1);
 }
