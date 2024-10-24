@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void comb3(void)
+int main(void)
 {
   int two_digit;
   for (two_digit = 01, two_digit <= 89, two_digit++)
@@ -12,5 +12,5 @@ void comb3(void)
           putchar(32);
 	}
     }
-  return;
+  return (0);
 }
