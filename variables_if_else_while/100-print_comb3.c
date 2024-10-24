@@ -20,5 +20,6 @@ int main(void)
       }
     second++;
   }
+  putchar('\n');
   return (0);
 }
