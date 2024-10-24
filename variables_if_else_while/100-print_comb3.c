@@ -16,7 +16,7 @@ int main(void)
 	}
       if ( two_digit !=89)
 	{
-	  putchar(48 + ' ');
+	  putchar(',' + ' ');
 	}
     }
   return (0);
