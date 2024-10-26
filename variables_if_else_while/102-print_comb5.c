@@ -19,12 +19,9 @@ int main(void)
 		    {
 		      un = un + 1;
 		    }
-		  if (quatre == deux)
+		  if ((quatre == deux && trois == un) || (quatre == un && trois == deux))
 		    {
-		      if (trois == un)
-			{
-			  un = un + 1;
-			}
+		      un = un + 1;
 		    }
 		  if (!(un == 1 && deux == 0 && trois == 0 && quatre == 0))
 		    {
