@@ -19,6 +19,10 @@ int main(void)
 		    {
 		      un = un + 1;
 		    }
+		  if (quatre != 0 && deux == quatre)
+		    {
+		      deux = quatre + 1;
+		    }
 		  if (!(un == 1 && deux == 0 && trois == 0 && quatre == 0))
 		    {
 		      putchar(',');
