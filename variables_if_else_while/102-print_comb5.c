@@ -11,11 +11,6 @@ int main(void)
 	    {
 	      for (un = 0; un <=9; un++)
 		{
-		  if (!(un == 1 && deux == 0 && trois == 0 && quatre == 0))
-		    {
-		      putchar(',');
-		      putchar(' ');
-		    }
 		  if (trois != 0 && un <= 1)
 		    {
 		      un = trois + 1;
@@ -23,6 +18,11 @@ int main(void)
 		  else if (deux == 0)
 		    {
 		      un = un + 1;
+		    }
+		  if (!(un == 1 && deux == 0 && trois == 0 && quatre == 0))
+		    {
+		      putchar(',');
+		      putchar(' ');
 		    }
 		  putchar(quatre + '0');
 		  putchar(trois + '0');
