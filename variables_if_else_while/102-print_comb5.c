@@ -9,6 +9,10 @@ int main(void)
 	{
 	  for (deux = 0; deux <= 9; deux++)
 	    {
+	      if (quatre != 0)
+		{
+		  deux = quatre + 1;
+		}
 	      for (un = 0; un <=9; un++)
 		{
 		  if (trois != 0 && un == 0 && deux == 0)
@@ -16,10 +20,6 @@ int main(void)
 		      un = trois + 1;
 		    }
 		  else if (deux == 0 && un == 0)
-		    {
-		      un = un + 1;
-		    }
-		  while ( quatre == deux && trois == un)
 		    {
 		      un = un + 1;
 		    }
