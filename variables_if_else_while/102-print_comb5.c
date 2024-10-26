@@ -19,9 +19,9 @@ int main(void)
 		    {
 		      un = un + 1;
 		    }
-		  if (quatre != 0 && deux == quatre)
+		  while (un + deux == trois + quatre)
 		    {
-		      deux = quatre + 1;
+		      un = un + 1;
 		    }
 		  if (!(un == 1 && deux == 0 && trois == 0 && quatre == 0))
 		    {
