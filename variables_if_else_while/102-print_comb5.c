@@ -9,7 +9,7 @@ int main(void)
 	{
 	  for (deux = 0; deux <= 9; deux++)
 	    {
-	      if (quatre != 0)
+	      if (quatre != 0 && deux == 0)
 		{
 		  deux = quatre + 1;
 		}
