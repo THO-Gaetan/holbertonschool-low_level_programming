@@ -9,12 +9,20 @@ int main(void)
 	{
 	  for (deux = 0; deux <= 9; deux++)
 	    {
-	      for (un = trois + 1; un <=9; un++)
+	      for (un = 0; un <=9; un++)
 		{
 		  if (!(un == 1 && deux == 0 && trois == 0 && quatre == 0))
 		    {
 		      putchar(',');
 		      putchar(' ');
+		    }
+		  if (deux == 0)
+		    {
+		      un = un + 1;
+		    }
+		  if (trois != 0)
+		    {
+		      un = trois + 1;
 		    }
 		  putchar(quatre + '0');
 		  putchar(trois + '0');
