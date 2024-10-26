@@ -19,7 +19,7 @@ int main(void)
 		    {
 		      un = un + 1;
 		    }
-		  while (un + deux == trois + quatre)
+		  while ( quatre == deux && trois == un)
 		    {
 		      un = un + 1;
 		    }
