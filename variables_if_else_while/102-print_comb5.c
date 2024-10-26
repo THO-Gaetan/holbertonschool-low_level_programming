@@ -16,13 +16,13 @@ int main(void)
 		      putchar(',');
 		      putchar(' ');
 		    }
-		  if (deux == 0)
-		    {
-		      un = un + 1;
-		    }
-		  if (trois != 0)
+		  if (trois != 0 && un <= 1)
 		    {
 		      un = trois + 1;
+		    }
+		  else if (deux == 0)
+		    {
+		      un = un + 1;
 		    }
 		  putchar(quatre + '0');
 		  putchar(trois + '0');
