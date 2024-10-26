@@ -11,7 +11,7 @@ int main(void)
 	    {
 	      for (un = 0; un <=9; un++)
 		{
-		  if (trois != 0 && un <= 1)
+		  if (trois != 0 && un == 0 && deux == 0)
 		    {
 		      un = trois + 1;
 		    }
