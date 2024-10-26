@@ -23,7 +23,7 @@ int main(void)
 		    {
 		      if (trois == un)
 			{
-			  un = un +;
+			  un = un + 1;
 			}
 		    }
 		  if (!(un == 1 && deux == 0 && trois == 0 && quatre == 0))
