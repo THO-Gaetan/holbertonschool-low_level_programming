@@ -15,7 +15,7 @@ int main(void)
 		    {
 		      un = trois + 1;
 		    }
-		  else if (deux == 0)
+		  else if (deux == 0 && un == 0)
 		    {
 		      un = un + 1;
 		    }
