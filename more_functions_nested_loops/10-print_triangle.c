@@ -2,10 +2,13 @@
 
 void print_triangle(int s)
 {
-  while (s > 0)
+  int col = s;
+  int raw;
+  int len = 1;
+  while (col > 0)
     {
-      int len = 1;
-      while (len <= s)
+      raw = 0;
+      while (raw < s)
 	{
 	  int sp = s - len;
 	  if (sp != 0)
@@ -17,10 +20,11 @@ void print_triangle(int s)
 	    {
 	      _putchar(35);
 	    }
-	  len++;
+	  raw++;
 	}
       _putchar('\n');
-      s--;
+      len++;
+      col--;
     }
   if (s <= 0)
     {
