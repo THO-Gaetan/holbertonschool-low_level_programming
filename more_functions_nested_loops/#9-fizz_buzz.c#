@@ -14,8 +14,7 @@ int main(void)
 	  else if ((len % 5) == 0)
 	    {
 	      printf("Buzz");
-	    }
-	  else if ((len % 3) == 0)
+	    }	  else if ((len % 3) == 0)
 	    {
 	      printf("Fizz");
 	    }
@@ -40,10 +39,7 @@ int main(void)
 	  putchar(len + '0');
 	    }
 	}
-      if (len != 100)
-	{
-	  putchar(' '); }
+      if (len !=
       len++;
     }
-  putchar('\n');
   return (0); }
