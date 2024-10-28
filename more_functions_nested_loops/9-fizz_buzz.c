@@ -5,7 +5,7 @@ int main(void)
   int len = 1;
   while (len <= 100)
     {
-      if(len >= 10 && len < 100)
+      if(len >= 10 && len <= 100)
 	{
 	  if ((len % 5) == 0 && (len % 3) == 0)
 	    {
