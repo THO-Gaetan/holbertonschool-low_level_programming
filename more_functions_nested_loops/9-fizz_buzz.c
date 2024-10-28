@@ -7,7 +7,11 @@ int main(void)
     {
       if(len >= 10 && len < 100)
 	{
-	  if((len % 5) == 0)
+	  if ((len % 5) == 0 && (len % 3) == 0)
+	    {
+	      printf("FizzBuzz");
+	    }
+	  else if ((len % 5) == 0)
 	    {
 	      printf("Buzz");
 	    }
