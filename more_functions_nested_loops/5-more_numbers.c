@@ -7,10 +7,10 @@
 void more_numbers(void)
 {
 int n = 0;
-int i = 48;
-int reset = 0;
 while (n <= 9)
 {
+int i = 48;
+int reset = 0;
 while (i <= 57 && reset <= 1)
 {
 if (reset == 1 && i <= 52)
