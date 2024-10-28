@@ -2,7 +2,7 @@
 
 int main(void)
 {
-  int len = 0;
+  int len = 1;
   while (len <= 100)
     {
       if(len >= 10 && len < 100)
