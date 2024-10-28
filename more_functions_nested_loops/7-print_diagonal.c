@@ -20,7 +20,7 @@ void print_diagonal(int n)
 	    }
 	}
     }
-  if (n <= 0)
+  if (n <= 0 && len == 0)
     {
       _putchar('\n');
     }
