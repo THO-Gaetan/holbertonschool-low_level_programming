@@ -2,6 +2,7 @@
 
 void print_line(int n)
 {
+  int neg = 0;
   while (n > 0)
     {
       _putchar(95);
@@ -9,9 +10,10 @@ void print_line(int n)
     }
   while (n <= 0)
     {
-      _putchar(92);
-      _putchar(110);
-      n++;
+      n = -n;
+      _putchar('\n');
+      n--;
+      n = -n;
     }
   return;
 }
