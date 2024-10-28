@@ -3,10 +3,10 @@
 void print_triangle(int s)
 {
   int col = s;
-  int raw;
-  int len = 1;
+  int raw, len;
   while (col > 0)
     {
+      len = 1;
       raw = s;
       while (raw > 0)
 	{
