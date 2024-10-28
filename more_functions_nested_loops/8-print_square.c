@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_square - Prints a square, followed by a new line
- * @size: Size of the square
+ * @s: Size of the square
  *
  * Description: If size is 0 or less, the function should print only a new line
  */
@@ -29,4 +29,3 @@ _putchar('\n');
 }
 return;
 }
-  
