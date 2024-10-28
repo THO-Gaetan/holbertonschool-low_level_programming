@@ -32,8 +32,8 @@ i++;
 }
 }
 n++;
-}
 _putchar('\n');
+}
 return;
 }
   
