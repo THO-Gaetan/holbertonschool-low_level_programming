@@ -39,4 +39,4 @@ int main(void)
       putchar(' ');
       len++;
     }
-}
+  return (0); }
