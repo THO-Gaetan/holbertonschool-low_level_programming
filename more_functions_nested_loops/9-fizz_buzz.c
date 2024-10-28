@@ -3,7 +3,7 @@
 void more_numbers(void)
 {
   int len = 0;
-  char *f = "Fizz"
+  char *f = "Fizz";
   while (len <= 100)
     {
       if(len >= 10 && len < 100)
