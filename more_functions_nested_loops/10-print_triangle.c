@@ -7,8 +7,8 @@ void print_triangle(int s)
   int len = 1;
   while (col > 0)
     {
-      raw = 0;
-      while (raw < s)
+      raw = s;
+      while (raw > 0)
 	{
 	  int sp = s - len;
 	  if (sp != 0)
