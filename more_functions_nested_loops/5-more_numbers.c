@@ -17,7 +17,7 @@ if (reset == 1 && i <= 52)
 {
 _putchar(49);
 }
-if ( reset == 0 || i <= 52)
+if (reset == 0 || i <= 52)
 {
 _putchar(i);
 }
@@ -36,5 +36,3 @@ _putchar('\n');
 }
 return;
 }
-  
-	  
