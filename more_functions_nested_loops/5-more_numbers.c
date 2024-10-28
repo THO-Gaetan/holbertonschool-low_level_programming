@@ -6,6 +6,7 @@
  */
 void more_numbers(void)
 {
+int n;
 int i = 48;
 int reset = 0;
 for (n = 0; n <= 9; n++)
