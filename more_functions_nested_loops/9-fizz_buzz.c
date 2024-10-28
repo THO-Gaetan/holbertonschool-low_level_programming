@@ -2,10 +2,10 @@
 
 void more_numbers(void)
 {
-  int len = ;
-  char b = "Buzz";
-  char f = "Fizz";
-  char fb = "FizzBuzz";
+  int len = 0;
+  char b = Buzz;
+  char f = Fizz;
+  char fb = FizzBuzz;
   while (len <= 100)
     {
       if(len >= 10 && len < 100)
