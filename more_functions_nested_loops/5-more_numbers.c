@@ -4,7 +4,7 @@ void more_numbers(void)
 {
   int i = 48;
   int reset = 0;
-  while (i <= 57 && reset == 1)
+  while (i <= 57 && reset <= 1)
     {
       if (reset == 1 && i <= 52)
 	{
