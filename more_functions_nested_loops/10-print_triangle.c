@@ -3,23 +3,23 @@
 void print_triangle(int s)
 {
   int col = s;
-  int raw, len;
+  int raw;
+  int len = 1;
   while (col > 0)
     {
-      len = 1;
+      int sp = col - len;
       raw = s;
       while (raw > 0)
 	{
-	  int sp = s - len;
 	  if (sp != 0)
 	    {
 	      _putchar(' ');
+	      sp--;
 	    }
 	  else
 	    {
 	      _putchar(35);
 	    }
-	  len++;
 	  raw--;
 	}
       _putchar('\n');
