@@ -14,16 +14,15 @@ void print_triangle(int s)
 	  if (sp != 0)
 	    {
 	      _putchar(' ');
-	      sp--;
 	    }
 	  else
 	    {
 	      _putchar(35);
 	    }
+	  len++;
 	  raw--;
 	}
       _putchar('\n');
-      len++;
       col--;
     }
   if (s <= 0)
