@@ -3,7 +3,7 @@
 void print_diagonal(int n)
 {
   int len;
-  while (n > 0)
+  while (n => 0)
     {
     _putchar(92);
     _putchar('\n');
