@@ -2,6 +2,7 @@
 
 void print_diagonal(int n)
 {
+  int len;
   while (n > 0)
     {
     _putchar(92);
@@ -12,7 +13,7 @@ void print_diagonal(int n)
 	_putchar(' ');
 	len--;
       }
-    i--;
+    n--;
     }
   return;
 }
