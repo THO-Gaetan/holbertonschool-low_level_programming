@@ -2,8 +2,7 @@
 
 void print_triangle(int s)
 {
-  int col = s;
-  while (col > 0)
+  while (s > 0)
     {
       int len = 1;
       while (len <= s)
@@ -20,7 +19,8 @@ void print_triangle(int s)
 	    }
 	  len++;
 	}
-      col--;
+      _putchar('\n');
+      s--;
     }
   if (s <= 0)
     {
