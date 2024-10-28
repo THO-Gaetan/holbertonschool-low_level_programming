@@ -9,11 +9,11 @@ int main(void)
 	{
 	  if((len % 5) == 0)
 	    {
-	      printf("Fizz");
+	      printf("Buzz");
 	    }
 	  else if ((len % 3) == 0)
 	    {
-	      printf("Buzz");
+	      printf("Fizz");
 	    }
 	  else
 	    {
