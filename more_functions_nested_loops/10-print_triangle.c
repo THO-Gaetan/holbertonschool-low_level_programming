@@ -2,20 +2,25 @@
 
 void print_triangle(int s)
 {
-  int len = 1;
-  while (len <= s)
+  int col = s;
+  while (col > 0)
     {
-      int sp = s - len;
-      if (sp != 0)
+      int len = 1;
+      while (len <= s)
 	{
-	  _putchar(' ');
-	  sp--;
+	  int sp = s - len;
+	  if (sp != 0)
+	    {
+	      _putchar(' ');
+	      sp--;
+	    }
+	  else
+	    {
+	      _putchar(35);
+	    }
+	  len++;
 	}
-      else
-	{
-	  _putchar(35);
-	}
-      len++;
+      col--;
     }
   if (s <= 0)
     {
