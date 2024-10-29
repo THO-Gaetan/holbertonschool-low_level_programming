@@ -20,7 +20,7 @@ help++;
 len++;
 }
 help--;
-if (len % 2 !=0)
+if (len % 2 != 0)
 {
 run--;
 }
