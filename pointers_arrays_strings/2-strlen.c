@@ -6,7 +6,7 @@ int _strlen(char *s)
   while (*s)
     {
       (void)*s++;
-      len++
+      len++;
     }
   
   return (len);
