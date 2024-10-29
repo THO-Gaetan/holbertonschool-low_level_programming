@@ -2,10 +2,18 @@
 
 void rev_string(char *s)
 {
+  int len = 0;
   while (*s)
     {
       (void)*s++;
+      len++;
     }
-  (void)*s--;
+  int i = len - 1;
+  int rev;
+  while (i >= 0)
+    {
+      rev += s[i];
+      i--;
+    }
   return;
 }
