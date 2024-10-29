@@ -3,13 +3,13 @@
 void rev_string(char *s)
 {
   int len = 0;
+  int rev, i;
   while (*s)
     {
       (void)*s++;
       len++;
     }
-  int i = len - 1;
-  int rev;
+  i = len - 1;
   while (i >= 0)
     {
       rev += s[i];
