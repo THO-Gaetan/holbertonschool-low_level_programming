@@ -4,11 +4,9 @@
 void print_array(int *a, int n)
 {
   int i = 0;
-  int sum;
   while (i < n)
     {
-      sum += a[i];
-      printf("%d", sum);
+      printf("%d", a[i]);
       i++;
       if (i != n)
 	{
