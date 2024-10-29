@@ -12,13 +12,21 @@
 void puts_half(char *str)
 {
 int len = 0;
+int run = 0;
+char *help = str;
+ while (*help >= '\0')
+   {
+     help++;
+     len++;
+   }
+   help--;
 while (*str)
 {
-if (len >= 5)
+if (run >= len / 2)
 {
 _putchar(*str);
 }
-len++;
+run++;
 str++;
 }
 _putchar('\n');
