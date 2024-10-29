@@ -8,8 +8,8 @@ while(*str)
     if (len%2 == 0)
       {
 	_putchar(*str);
-	len++;
       }
+    len++;
     str++;
   }
  return;
