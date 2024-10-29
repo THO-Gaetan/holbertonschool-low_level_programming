@@ -4,18 +4,14 @@ void rev_string(char *s)
 {
   int len = 0;
   char temp;
+  char *help = s;
   int i = 0;
-  while (*s)
+  while (*help != '\0')
     {
-      (void)*s++;
+      help++;
       len++;
     }
-  (void)*s--;
-  while (*s)
-    {
-      (void)*s--;
-    }
-  (void)*s++;
+  help--;
   while (i < len - 1)
     {
       temp = s[i];
