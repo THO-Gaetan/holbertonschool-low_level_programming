@@ -9,7 +9,7 @@ void print_array(int *a, int n)
     {
       sum += a[i];
       i++;
-      printf("%p", sum);
+      printf("%d", sum);
       if (i != n)
 	{
 	  _putchar(',');
