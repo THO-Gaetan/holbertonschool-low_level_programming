@@ -19,6 +19,6 @@ while (*a > sb)
 while (*b < sa)
 {
 (*b)++;
-} 
+}
 return;
 }
