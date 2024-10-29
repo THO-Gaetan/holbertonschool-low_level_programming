@@ -12,11 +12,6 @@ void rev_string(char *s)
       len++;
     }
   (void)*s--;
-  while (*s)
-    {
-      (void)*s--;
-    }
-  (void)*s++;
   while (i < len - 1)
     {
       temp = s[i];
