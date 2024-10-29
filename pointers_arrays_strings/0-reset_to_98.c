@@ -2,14 +2,13 @@
 
 void reset_to_98(int *n)
 {
-  int *point = n;
-  while (*point > 99)
+  while (*point > 98)
     {
-      *point--;
+      (*n)--;
     }
-  while (*point < 97)
+  while (*point < 98)
     {
-      *point++;
+      (*n)++;
     }
   return;
 }
