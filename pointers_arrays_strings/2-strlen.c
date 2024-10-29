@@ -6,10 +6,10 @@ int _strlen(char *s)
   while (*s)
     {
       *s++;
-      len = *s
+      len = *s;
     }
   
-  return (*s);
+  return (len);
 }
     
     
