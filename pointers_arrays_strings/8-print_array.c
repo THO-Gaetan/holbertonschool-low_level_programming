@@ -8,8 +8,8 @@ void print_array(int *a, int n)
   while (i < n)
     {
       sum += a[i];
-      i++;
       printf("%d", sum);
+      i++;
       if (i != n)
 	{
 	  _putchar(',');
