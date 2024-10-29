@@ -3,9 +3,15 @@
 
 void rev_string(char *s)
 {
-  int len = strlen(s);
+  int len;
   char temp;
   int i = 0;
+  while (*s)
+    {
+      (void)*s++;
+      len++;
+    }
+  
   while (i < len - 1)
     {
       temp = s[i];
