@@ -7,9 +7,10 @@ while(*str)
   {
     if (len%2 == 0)
       {
-	_putchar(*str++);
+	_putchar(*str);
 	len++;
       }
+    str++;
   }
  return;
 }
