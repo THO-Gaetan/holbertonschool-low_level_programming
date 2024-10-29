@@ -14,16 +14,16 @@ void puts_half(char *str)
 int len = 0;
 int run = 0;
 char *help = str;
- while (*help != '\0')
-   {
-     help++;
-     len++;
-   }
-   help--;
-   if (len % 2 !=0)
-     {
-       run--;
-     }
+while (*help != '\0')
+{
+help++;
+len++;
+}
+help--;
+if (len % 2 !=0)
+{
+run--;
+}
 while (*str)
 {
 if (run >= len / 2)
