@@ -20,6 +20,10 @@ char *help = str;
      len++;
    }
    help--;
+   if ((len / 2) % 2 !=0)
+     {
+       run++;
+     }
 while (*str)
 {
 if (run >= len / 2)
