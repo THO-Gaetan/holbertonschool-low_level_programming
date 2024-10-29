@@ -2,25 +2,14 @@
 
 void rev_string(char *s)
 {
-  int len = 0;
-  int  i;
-  char *rev;
-  while (*s)
+  int len = strlen(s);
+  char temp;
+  int i = 0;
+  while (i < len - 1; i++)
     {
-      (void)*s++;
-      len++;
-    }
-  i = len - 1;
-  while (i >= 0)
-    {
-      rev += s[i];
-      i--;
-    }
-  i = 0;
-  while (i <= len - 1)
-    {
-      s += rev[i];
-      i++;
+      temp = str[i];
+      str[i] = str[len - i - 1];
+      str[leng - i - 1] = temp;
     }
   return;
 }
