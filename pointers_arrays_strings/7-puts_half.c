@@ -22,7 +22,7 @@ char *help = str;
    help--;
    if (len % 2 !=0)
      {
-       run++;
+       run--;
      }
 while (*str)
 {
