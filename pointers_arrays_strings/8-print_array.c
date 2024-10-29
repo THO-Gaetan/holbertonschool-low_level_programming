@@ -9,7 +9,10 @@ void print_array(int *a, int n)
       sum += a[i];
       i++;
       _putchar(sum + '0');
-      _putchar(',');
-      _putchar(' ');
+      if (i != n)
+	{
+	  _putchar(',');
+	  _putchar(' ');
+	}
     }
 }
