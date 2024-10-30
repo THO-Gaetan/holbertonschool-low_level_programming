@@ -11,10 +11,6 @@ int _atoi(char *s)
       n = '0';
       while (n <= '9')
 	{
-	  if (*s + 1 == ' ')
-	    {
-	      neg = 1;
-	    }
 	  else if (*s == '-')
 	    {
 	      neg = -1;
@@ -29,7 +25,11 @@ int _atoi(char *s)
 	    }
 	  n++;
 	}
+      if {*s == ' ')
+	{
+	  neg = 1;
+	}
       s++;
-    }
+    } 
   return (neg * i);
 }
