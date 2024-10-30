@@ -5,8 +5,8 @@ char *_strcat(char *dest, char *src)
   int n = 0;
   int run = 0;
   int runv2 = 0;
-  int *oups = dest;
-  int *help = src;
+  char *oups = dest;
+  char *help = src;
   int sum;
   while (*oups != '\n')
     {
