@@ -18,16 +18,13 @@ int _atoi(char *s)
 	  else if (*s == ';')
 	    {
 	      stop = 1;
+	      neg = 1;
 	    }
 	  else if (*s == n && stop != 1)
 	    {
 	      i = i * 10 +(*s - '0');
 	    }
 	  n++;
-	}
-      if (*s == ' ')
-	{
-	  neg = 1;
 	}
       s++;
     } 
