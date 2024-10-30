@@ -5,7 +5,8 @@ int _atoi(char *s)
   int i = 0;
   int neg = 1;
   char n;
-  int stop;
+  int stop = 0;
+  int retain = 0;
   while (*s != '\0')
     {
       n = '0';
@@ -15,7 +16,11 @@ int _atoi(char *s)
 	    {
 	      neg = -1;
 	    }
-	  else if (*s == n)
+	  else if (num != 0 && *s == ' ')
+	    {
+	      retain = 1;
+	    }
+	  else if (*s == n && retain != 0)
 	    {
 	      i = i * 10 +(*s - '0');
 	    }
