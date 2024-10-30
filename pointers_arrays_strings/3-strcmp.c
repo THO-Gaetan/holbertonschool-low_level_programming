@@ -20,12 +20,12 @@ int _strcmp(char *s1, char *s2)
     {
       _putchar('-');
       _putchar('1');
-      _putchar('5');
+      _putchar('3');
     }
   else if (run > runv2)
     {
       _putchar('1');
-      _putchar('5');
+      _putchar('3');
     }
   else if (run == runv2)
     {
