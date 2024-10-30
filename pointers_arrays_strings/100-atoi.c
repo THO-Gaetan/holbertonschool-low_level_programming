@@ -11,13 +11,13 @@ int _atoi(char *s)
       n = '0';
       while (n <= '9')
 	{
-	  if (*s == '-')
-	    {
-	      neg = -1;
-	    }
-	  else if (*s == ' ')
+	  if (*s + 1 == ' ')
 	    {
 	      neg = 1;
+	    }
+	  else if (*s == '-')
+	    {
+	      neg = -1;
 	    }
 	  else if (*s == ';')
 	    {
