@@ -21,13 +21,12 @@ char *_strcat(char *dest, char *src)
     }
   run--;
   sum = run + runv2;
-  runv2 = run + 1;
-  while (run <= sum)
+  runv2++;
+  while (runv2 <= sum)
     {
       dest[runv2] = src[n];
       n++;
       runv2++;
-      run++;
     }
   return (dest);
 }
