@@ -10,7 +10,6 @@ char *_strncpy(char *dest, char *src, int n)
       help++;
       run++;
     }
-  run--;
   while (runv2 <= run && runv2 < n)
     {
       dest[runv2] = src[runv2];
