@@ -16,7 +16,7 @@ int _atoi(char *s)
 	    {
 	      neg = -1;
 	    }
-	  else if (num != 0 && *s == ' ')
+	  else if (i != 0 && *s == ' ')
 	    {
 	      retain = 1;
 	    }
