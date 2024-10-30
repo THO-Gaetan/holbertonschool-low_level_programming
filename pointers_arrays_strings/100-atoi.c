@@ -14,6 +14,9 @@ int _atoi(char *s)
 	    {
 	      neg = -1;
 	    }
+	  else if (*s == ';')
+	    {
+	    }
 	  else if (*s == n)
 	    {
 	      i = i * 10 +(*s - '0');
