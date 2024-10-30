@@ -8,7 +8,7 @@ char *_strcat(char *dest, char *src)
   char *oups = dest;
   char *help = src;
   int sum;
-  while (*oups != '\n')
+  while (*oups != '\0')
     {
       oups++;
       runv2++;
