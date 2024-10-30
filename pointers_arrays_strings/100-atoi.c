@@ -28,15 +28,16 @@ int _atoi(char *s)
 	}
       s++;
     }
-  for (n = '0'; n <= '9'; n++)
+  if { neg == -1)
     {
-      if (neg != 1)
+      s--;
+      for (n = '0'; n <= '9'; n++)
 	{
-	  if (*s - 1 != n && stop == 0)
+	  if (*s != n && stop == 0)
 	    {
 	      neg = 1;
 	    }
-	  else if (*s - 1 == n && stop == 0)
+	  else if (*s == n && stop == 0)
 	    {
 	      neg = -1;
 	      stop = 1;
