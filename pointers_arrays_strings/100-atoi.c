@@ -16,6 +16,7 @@ int _atoi(char *s)
 	    }
 	  else if (*s == ';')
 	    {
+	      break;
 	    }
 	  else if (*s == n)
 	    {
