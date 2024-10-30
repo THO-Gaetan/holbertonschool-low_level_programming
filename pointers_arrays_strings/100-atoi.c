@@ -2,7 +2,7 @@
 
 int _atoi(char *s)
 {
-  int i = 0;
+  unsigned int i = 0;
   int neg = 1;
   char n;
   int stop = 0;
