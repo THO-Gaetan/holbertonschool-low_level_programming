@@ -30,14 +30,17 @@ int _atoi(char *s)
     }
   for (n = '0'; n <= '9'; n++)
     {
-      if (*s - 1 != n && stop == 0)
+      if (neg != 1)
 	{
-	  neg = 1;
-	}
-      else if (*s - 1 == n && stop == 0)
-	{
-	  neg = -1;
-	  stop = 1;
+	  if (*s - 1 != n && stop == 0)
+	    {
+	      neg = 1;
+	    }
+	  else if (*s - 1 == n && stop == 0)
+	    {
+	      neg = -1;
+	      stop = 1;
+	    }
 	}
     }
   return (neg * i);
