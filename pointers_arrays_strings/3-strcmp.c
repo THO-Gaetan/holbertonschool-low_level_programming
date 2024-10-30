@@ -16,13 +16,13 @@ int _strcmp(char *s1, char *s2)
       runv2++;
       help++;
     }
-  if (run < runv2)
+  if (run > runv2)
     {
       _putchar('-');
       _putchar('1');
       _putchar('3');
     }
-  else if (run > runv2)
+  else if (run < runv2)
     {
       _putchar('1');
       _putchar('3');
