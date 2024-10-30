@@ -3,31 +3,26 @@
 int _atoi(char *s)
 {
   int i = 0;
-  int len = 0;
   int neg = 1;
   while (*s != '\0')
     {
-      if (s[len] == ' ')
+      if (*s == ' ')
       {
 	s++;
-	len++;
       }
-      else if (s[len] == '-')
+      else if (*s == '-')
 	{
 	  neg = -1;
 	  s++;
-	  len++;
 	}
-      else if (s[len] == '+')
+      else if (*s == '+')
 	{
 	  s++;
-	  len++;
 	}
       else
 	{
-      i = i * 10 +(*s - '0');
-      s++;
-      len++;
+	  i = i * 10 +(*s - '0');
+	  s++;
 	}
     }
   return (neg * i);
