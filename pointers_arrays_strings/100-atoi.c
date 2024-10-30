@@ -11,7 +11,7 @@ int _atoi(char *s)
       n = '0';
       while (n <= '9')
 	{
-	  else if (*s == '-')
+	  if (*s == '-')
 	    {
 	      neg = -1;
 	    }
