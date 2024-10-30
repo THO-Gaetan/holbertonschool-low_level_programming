@@ -28,7 +28,7 @@ int _atoi(char *s)
 	}
       s++;
     }
-  if { neg == -1)
+  if (neg == -1)
     {
       s--;
       for (n = '0'; n <= '9'; n++)
