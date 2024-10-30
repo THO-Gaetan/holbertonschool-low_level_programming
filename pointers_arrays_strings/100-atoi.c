@@ -25,7 +25,7 @@ int _atoi(char *s)
 	    }
 	  n++;
 	}
-      if {*s == ' ')
+      if (*s == ' ')
 	{
 	  neg = 1;
 	}
