@@ -15,6 +15,10 @@ int _atoi(char *s)
 	    {
 	      neg = -1;
 	    }
+	  else if (*s == ' ')
+	    {
+	      neg = 1;
+	    }
 	  else if (*s == ';')
 	    {
 	      stop = 1;
