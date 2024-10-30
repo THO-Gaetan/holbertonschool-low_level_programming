@@ -20,7 +20,7 @@ int _atoi(char *s)
 	    {
 	      retain = 1;
 	    }
-	  else if (*s == n && retain != 0)
+	  else if (*s == n && retain == 0)
 	    {
 	      i = i * 10 +(*s - '0');
 	    }
