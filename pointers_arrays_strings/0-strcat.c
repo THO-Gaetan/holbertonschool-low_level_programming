@@ -19,7 +19,6 @@ char *_strcat(char *dest, char *src)
       help++;
       run++;
     }
-  run--;
   sum = run + runv2;
   runv2++;
   while (runv2 <= sum)
