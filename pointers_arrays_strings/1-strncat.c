@@ -19,7 +19,6 @@ char *_strncat(char *dest, char *src, int n)
       help++;
       runv2++;
     }
-  runv2--;
   sum = runv2 + run;
   run++;
   while (run <= sum && i < n)
