@@ -6,7 +6,7 @@ char *cap_string(char *str)
   int cap = 1, i = 0;
   while (*s)
     {
-      if (*s == '.' && cap == 0)
+      if (*s == ('.' || '\t' || '\n' || '!') && cap == 0)
 	{
 	  cap++;
 	}
