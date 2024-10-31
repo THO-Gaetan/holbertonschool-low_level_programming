@@ -2,27 +2,19 @@
 
 char *string_toupper(char *str)
 {
-  char *n = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  char *m = "abcdefghijklmnopqrstuvwxyz";
+  int n;
   
   while (*str != '\0')
     {
-      while (*n)
+      n = 97;
+      while (n <= 122)
 	{
-	  if (*m == *str)
+	  if (n == *str)
 	    {
-	      *str = *n;
+		*str = n - 32;
 	    }
 	  n++;
-	  m++;
 	}
-      n--;
-      while (*n)
-	{
-	  n--;
-	  m--;
-	}
-      n++;
       str++;
     }
   return (str);
