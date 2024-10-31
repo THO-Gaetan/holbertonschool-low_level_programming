@@ -1,17 +1,17 @@
 #include "main.h"
 
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
   char *n = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   char *m = "abcdefghijklmnopqrstuvwxyz";
   
-  while (*s != '\0')
+  while (*str != '\0')
     {
       while (*n)
 	{
-	  if (*m == *s)
+	  if (*m == *str)
 	    {
-	      *s = *n;
+	      *str = *n;
 	    }
 	  n++;
 	  m++;
@@ -23,7 +23,7 @@ char *string_toupper(char *s)
 	  m--;
 	}
       n++;
-      s++;
+      str++;
     }
   return (s);
 }
