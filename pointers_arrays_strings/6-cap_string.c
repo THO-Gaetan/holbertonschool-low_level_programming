@@ -4,13 +4,18 @@ char *cap_string(char *str)
 {
   char *s = str;
   int cap = 1, i = 0;
+  char *maj = ",;.!?\"\(\)\{\}\t\n"
   while (*s)
     {
-      if (*s == ('.' || '\t' || '\n' || '!') && cap == 0)
+      while (*maj)
 	{
-	  cap++;
+	  if (*s == *maj && cap == 0)
+	    {
+	      cap++;
+	    }
+	  maj++;
 	}
-      else if ((*s > 64 && *s < 91) && cap == 1)
+      if ((*s > 64 && *s < 91) && cap == 1)
 	{
 	  cap--;
 	}
@@ -19,6 +24,12 @@ char *cap_string(char *str)
 	  str[i] -= 32;
 	  cap--;
 	}
+      maj--;
+      while (*maj)
+	{
+	  maj--;
+	}
+      maj++;
       i++;
       s++;
     }
