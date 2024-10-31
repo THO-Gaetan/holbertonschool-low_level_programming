@@ -15,11 +15,12 @@ char *cap_string(char *str)
 	    }
 	  maj++;
 	}
-      if ((*s > 64 && *s < 91) && cap == 1)
-	{
-	  cap--;
-	}
-      else if ((*s > 96 && *s < 123) && cap == 1)
+      /*if ((*s > 64 && *s < 91) && cap == 1)
+       *{
+       *  cap--;
+       *}
+       */
+      if ((*s > 96 && *s < 123) && cap == 1)
 	{
 	  str[i] -= 32;
 	  cap--;
