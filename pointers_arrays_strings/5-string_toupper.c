@@ -5,7 +5,7 @@ char *string_toupper(char *s)
   char *n = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   char *m = "abcdefghijklmnopqrstuvwxyz";
   
-  while (*s)
+  while (*s != '\0')
     {
       while (*n)
 	{
