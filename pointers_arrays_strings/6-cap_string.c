@@ -4,7 +4,7 @@ char *cap_string(char *str)
 {
   char *s = str;
   int cap = 1, i = 0;
-  char *maj = ",;.!?\"\(\)\{\}\t\n";
+  char *maj = ",;.!?\"(){}\t\n";
   while (*s)
     {
       while (*maj)
