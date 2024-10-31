@@ -3,15 +3,14 @@
 void reverse_array(int *a, int n)
 {
   int OUPS = 0;
-  int HELP = n;
   int ALAID;
-  while (OUPS < HELP)
+  while (OUPS <= n)
     {
       ALAID = a[OUPS];
-      a[OUPS] = a[HELP];
-      a[HELP] = ALAID;
+      a[OUPS] = a[n];
+      a[n] = ALAID;
       OUPS++;
-      HELP--;
+      n++;
     }
   return;
 }
