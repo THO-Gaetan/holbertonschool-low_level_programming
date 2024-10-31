@@ -3,7 +3,7 @@
 char *cap_string(char *str)
 {
   char *s = str;
-  int cap = 0, i = 0;
+  int cap = 1, i = 0;
   while (*s)
     {
       if (*s == '.' && cap == 0)
