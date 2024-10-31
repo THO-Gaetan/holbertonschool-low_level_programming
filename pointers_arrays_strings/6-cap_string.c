@@ -10,17 +10,17 @@ char *cap_string(char *str)
       if ((*s > 96 && *s < 123) && cap == 1)
 	{
 	  str[i] -= 32;
-	  cap--;
+	  cap = 0;
 	}
       else
 	{
-	  cap--;
+	  cap = 0;
 	}
       while (*maj)
 	{
 	  if (*s == *maj && cap == 0)
 	    {
-	      cap++;
+	      cap = 1;
 	    }
 	  maj++;
 	}
