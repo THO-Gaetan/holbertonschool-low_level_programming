@@ -7,14 +7,6 @@ char *cap_string(char *str)
   char *maj = " ,;.!?\"(){}\t\n";
   while (*s)
     {
-      while (*maj)
-	{
-	  if (*s == *maj && cap == 0)
-	    {
-	      cap++;
-	    }
-	  maj++;
-	}
       if ((*s > 96 && *s < 123) && cap == 1)
 	{
 	  str[i] -= 32;
@@ -23,6 +15,14 @@ char *cap_string(char *str)
       else
 	{
 	  cap--;
+	}
+      while (*maj)
+	{
+	  if (*s == *maj && cap == 0)
+	    {
+	      cap++;
+	    }
+	  maj++;
 	}
       maj--;
       while (*maj)
