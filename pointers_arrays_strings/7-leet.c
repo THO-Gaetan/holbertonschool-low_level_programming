@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 char *leet(char *str)
 {
