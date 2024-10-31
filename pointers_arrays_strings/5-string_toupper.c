@@ -16,13 +16,8 @@ char *string_toupper(char *s)
 	  n++;
 	  m++;
 	}
-      n--;
-      while (*n)
-	{
-	  n--;
-	  m--;
-	}
-      n++;
+      n = 0;
+      m = 0;
       s++;
     }
   return (s);
