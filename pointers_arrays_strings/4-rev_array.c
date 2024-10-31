@@ -2,18 +2,16 @@
 
 void reverse_array(int *a, int n)
 {
-  int arr[];
-  int i = 0;
-  while (i < n)
+  int OUPS = 0;
+  int HELP = n;
+  int ALAID;
+  while (OUPS < HELP)
     {
-      arr[i] = a[i];
-      i++;
-    }
-  i--;
-  while (i >= 0)
-    {
-      a[i] = arr[i];
-      i--;
+      ALAID = a[OUPS];
+      a[OUPS] = a[HELP];
+      a[HELP] = ALAID;
+      OUPS++;
+      HELP--;
     }
   return;
 }
