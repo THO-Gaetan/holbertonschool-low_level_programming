@@ -10,11 +10,6 @@ if (s[i] != c)
 {
 s++;
 }
-else
-{
-s++;
-break;
-}
 i++;
 }
 return (s);
