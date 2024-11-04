@@ -8,19 +8,26 @@ char *_strstr(char *haystack, char *needle)
 
     while (help[i] != '\0')
     {
-        if (help[i] == needle[n])
+        if (needle(n) == ' ')
         {
-            n++;
-            maybe++;
+            stop = 1;
         }
-        else if (n != 0)
+        if (stop == 0)
         {
-            n = 0;
-            haystack = haystack + maybe + 1;
-        }
-        else 
-        {
-            haystack++;
+            if (help[i] == needle[n])
+            {
+                n++;
+                maybe++;
+            }
+            else if (n != 0)
+            {
+                n = 0;
+                haystack = haystack + maybe + 1;
+            }
+            else 
+            {
+                haystack++;
+            }
         }
         i++;
     }
