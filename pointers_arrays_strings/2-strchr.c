@@ -5,19 +5,17 @@
  * @c: The character to find
  *
  * Return: A pointer to the first occurrence character c in the string s,
- *         or a pointer to the null terminator if c is not found
+ *         or 0 if the character is not found
  */
 char *_strchr(char *s, char c)
 {
-int i = 0;
-
-while (s[i] != '\0')
+while (*s != '\0')
 {
-if (s[i] != c)
+if (*s == c)
 {
+return (s);
+}
 s++;
 }
-i++;
-}
-return (s);
+return (0);
 }
