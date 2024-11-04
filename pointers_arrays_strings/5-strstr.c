@@ -2,13 +2,13 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-    int i = 0, n = 0, maybe = 0;
+    int i = 0, n = 0, maybe = 0, stop = 0;
     
     char *help = haystack;
 
     while (help[i] != '\0')
     {
-        if (needle(n) == ' ')
+        if (needle[n] == ' ')
         {
             stop = 1;
         }
