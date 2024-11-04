@@ -2,7 +2,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-    int i = 0, n = 0;
+    int i = 0, n = 0, maybe = 0;
     
     char *help = haystack;
 
@@ -11,6 +11,12 @@ char *_strstr(char *haystack, char *needle)
         if (help[i] == needle[n])
         {
             n++;
+            maybe++;
+        }
+        else if (n != 0)
+        {
+            n = 0;
+            haystack = haystack + maybe + 1;
         }
         else 
         {
