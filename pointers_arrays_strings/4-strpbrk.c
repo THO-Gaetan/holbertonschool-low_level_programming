@@ -24,11 +24,12 @@ change = 1;
 }
 n++;
 }
-if (change == 0)
+if (change == 1)
 {
-s++;
+return (s);
 }
+s++;
 i++;
 }
-return (s);
+return (0);
 }
