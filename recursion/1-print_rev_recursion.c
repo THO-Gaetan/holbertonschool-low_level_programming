@@ -6,5 +6,4 @@
     {
         return;
     }
-    _putchar
  }
