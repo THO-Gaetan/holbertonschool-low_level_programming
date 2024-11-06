@@ -33,10 +33,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		if (relay < 0)
-			sum += (-1 * relay);
-		else
-			sum += relay;
+		sum += relay;
 		i++;
 	}
 	printf("%d\n", sum);
