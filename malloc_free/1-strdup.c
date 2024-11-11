@@ -31,7 +31,7 @@ char *_strdup(char *str)
 	int i = 0;
 	char *p = malloc(strdup_count(str) + 1);
 
-	if (!(str))
+	if (!p)
 	{
 		return (NULL);
 	}
@@ -40,6 +40,6 @@ char *_strdup(char *str)
 		*(p + i) = str[i];
 		i++;
 	}
+	p[i] = '\0'
 	return (p);
-	free(p);
 }
