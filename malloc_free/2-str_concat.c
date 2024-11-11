@@ -13,13 +13,13 @@ int str_concat_help(char *s1, char *s2)
 
 	if (s1)
 	{
-	while (s1[i] != '\0')
-		i++;
+		while (s1[i] != '\0')
+			i++;
 	}
 	if (s2)
 	{
-	while (s2[n] != '\0')
-		n++;
+		while (s2[n] != '\0')
+			n++;
 	}
 	i += n;
 	return (i);
