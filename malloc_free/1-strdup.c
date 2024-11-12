@@ -33,6 +33,7 @@ char *_strdup(char *str)
 
 	if (!p)
 	{
+		free(p);
 		return (NULL);
 	}
 	if (!str)
