@@ -29,13 +29,14 @@ int strdup_count(char *str)
 char *_strdup(char *str)
 {
 	int i = 0;
-	char *p = malloc(strdup_count(str) + 1);
-
-	if (!p)
+	char *p;
+	if (!str)
 	{
 		return (NULL);
-	}
-	if (!str)
+	} 
+	p = malloc(strdup_count(str) + 1);
+
+	if (!p)
 	{
 		return (NULL);
 	}
