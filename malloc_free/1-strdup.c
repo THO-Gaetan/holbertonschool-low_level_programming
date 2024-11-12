@@ -29,7 +29,7 @@ int strdup_count(char *str)
 char *_strdup(char *str)
 {
 	int i = 0;
-	char *p = malloc(strdup_count(str));
+	char *p = malloc(strdup_count(str) + 1);
 
 	if (!p)
 	{
@@ -44,6 +44,5 @@ char *_strdup(char *str)
 		*(p + i) = str[i];
 		i++;
 	}
-	p[i] = '\0';
 	return (p);
 }
