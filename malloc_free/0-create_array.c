@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 
 	if (!p)
 	{
-		free(p)
+		free(p);
 		return (NULL);
 	}
 	if (size == 0)
