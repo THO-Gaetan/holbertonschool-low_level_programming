@@ -35,14 +35,16 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	if (str)
+	if (!str)
 	{
-		while (str[i] != '\0')
-		{
-			*(p + i) = str[i];
-			i++;
-		}
-		p[i] = '\0';
+		return (null);
 	}
+	while (str[i] != '\0')
+	{
+		*(p + i) = str[i];
+		i++;
+	}
+	p[i] = '\0';
+	
 	return (p);
 }

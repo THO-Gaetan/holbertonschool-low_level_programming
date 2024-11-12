@@ -17,13 +17,10 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	if (size == 0)
 		return (NULL);
-	if (c)
+	while (i < size)
 	{
-		while (i < size)
-		{
-			p[i] = c;
-			i++;
-		}
+		p[i] = c;
+		i++;
 	}
 	p[i] = '\0';
 	return (p);
