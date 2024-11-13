@@ -30,6 +30,14 @@ char *str_while(char *str1, char *str2, unsigned int len, unsigned int len2)
 	unsigned int i = 0, n = 0;
 	char *p = malloc((len + len2) * sizeof(char) + 1);
 
+	if (str1 == NULL)
+	{
+		str1 = "";
+	}
+	if (str2 == NULL)
+	{
+		str2 = "";
+	}
 	if (!p)
 	{
 		return ("");
