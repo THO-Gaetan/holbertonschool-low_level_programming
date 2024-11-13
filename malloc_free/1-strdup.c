@@ -20,22 +20,17 @@ int strdup_count(char *str)
 	return (i);
 }
 /**
- * _strdup - Duplicates a string
+ * _strdup_while - Helper function to duplicate a string
  * @str: The string to duplicate
  *
- * Return: Pointer to the duplicated string, or NULL if insufficient memory
- * was available or if str is NULL
+ * Return: Pointer to the duplicated string, or NULL if malloc fails
  */
-char *_strdup(char *str)
+char *_strdup_while(char *str)
 {
 	int i = 0;
 	char *p;
 
-	if (!str)
-	{
-		return (NULL);
-	}
-	p = malloc(strdup_count(str) + 1);
+	p = malloc(strdup_count(str) * sizeof(char) + 1);
 
 	if (!p)
 	{
@@ -47,4 +42,20 @@ char *_strdup(char *str)
 		i++;
 	}
 	return (p);
+}
+
+/**
+ * _strdup - Duplicates a string
+ * @str: The string to duplicate
+ *
+ * Return: Pointer to the duplicated string, or NULL if insufficient memory
+ * was available or if str is NULL
+ */
+char *_strdup(char *str)
+{
+	if (!str)
+	{
+		return (NULL);
+	}
+	return (_strdup_while(str));
 }
