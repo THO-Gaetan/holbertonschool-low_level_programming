@@ -32,25 +32,23 @@ char *str_while(char *str1, char *str2, unsigned int len, unsigned int len2)
 
 	if (!p)
 	{
-		return ("");
+		return (NULL);
 	}
 	if (str1)
 	{
-		return ("");
-	}
-	while (i < len)
-	{
-		p[i] = str1[i];
-		i++;
+		while (i < len)
+		{
+			p[i] = str1[i];
+			i++;
+		}
 	}
 	if (!str2)
 	{
-		return ("");
-	}
-	while (n < len2)
-	{
-		p[i + n] = str2[n];
-		n++;
+		while (n < len2)
+		{
+			p[i + n] = str2[n];
+			n++;
+		}
 	}
 	p[i + n] = '\0';
 	return (p);
