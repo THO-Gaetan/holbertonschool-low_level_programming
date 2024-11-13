@@ -32,7 +32,7 @@ char *str_while(char *str1, char *str2, unsigned int len, unsigned int len2)
 
 	if (!p)
 	{
-		return (NULL);
+		return ("");
 	}
 	if (str1)
 	{
