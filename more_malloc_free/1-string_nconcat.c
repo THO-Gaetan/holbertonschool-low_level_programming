@@ -12,7 +12,7 @@ int string_nconcat_len(char *str)
 
 	if (str == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 	while (str[len])
 	{
