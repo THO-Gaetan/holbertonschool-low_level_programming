@@ -42,17 +42,16 @@ char *str_while(char *str1, char *str2, unsigned int len, unsigned int len2)
 	{
 		return ("");
 	}
-
-		while (i < len)
-		{
-			p[i] = str1[i];
-			i++;
-		}
-		while (n < len2)
-		{
-			p[i + n] = str2[n];
-			n++;
-		}
+	while (i < len)
+	{
+		p[i] = str1[i];
+		i++;
+	}
+	while (n < len2)
+	{
+		p[i + n] = str2[n];
+		n++;
+	}
 	p[i + n] = '\0';
 	return (p);
 }
