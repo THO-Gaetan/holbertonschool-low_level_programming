@@ -10,6 +10,10 @@ int string_nconcat_len(char *str)
 {
 	int len = 0;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	while (str[len])
 	{
 		len++;
