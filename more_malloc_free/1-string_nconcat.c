@@ -50,7 +50,7 @@ char *str_while(char *str1, char *str2, unsigned int len, unsigned int len2)
 			n++;
 		}
 	}
-	p[i + n] = '\0'
+	p[i + n] = '\0';
 	return (p);
 }
 /**
