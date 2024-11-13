@@ -70,7 +70,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len = string_nconcat_len(s1);
 	len2 = string_nconcat_len(s2);
 
-	if (n >= len2)
+	if (n > len2)
 	{
 		n = len2;
 	}
