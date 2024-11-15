@@ -1,13 +1,15 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * dog_change_data - Copies data from one string to another
- * @data_changed: Destination string
- * @data: Source string
- * @increment: Starting index for copying
- * @len: Length of data to copy
+ * dog_strlen - Calculates the length of a string
+ * @len: Initial length value (usually 0)
+ * @str: The string to measure
  *
- * Return: Pointer to the destination string
+ * Return: The length of the string
+ *
+ * Description: This function calculates the length of a string by
+ * incrementing a counter until it reaches the null terminator.
+ * The initial value of the counter is provided as an argument.
  */
 int dog_strlen(int len, char *str)
 {
@@ -17,6 +19,15 @@ int dog_strlen(int len, char *str)
 	}
 	return (len);
 }
+/**
+ * dog_change_data - Copies data from one string to another
+ * @data_changed: Destination string
+ * @data: Source string
+ * @increment: Starting index for copying
+ * @len: Length of data to copy
+ *
+ * Return: Pointer to the destination string
+ */
 char *dog_change_data(char *data_changed, char *data, int increment, int len)
 {
 	while (increment < len)
