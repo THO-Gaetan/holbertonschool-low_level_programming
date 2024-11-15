@@ -35,6 +35,7 @@ char *dog_change_data(char *data_changed, char *data, int increment, int len)
 		data_changed[increment] = data[increment];
 		increment++;
 	}
+	data_chaged[increment] = '\0';
 	return (data_changed);
 }
 /**
@@ -52,6 +53,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
+		return (NULL);
+	if (name == NULL || owner == NULL)
 		return (NULL);
 	len1 = dog_strlen(len1, name);
 	len2 = dog_strlen(len2, owner);
