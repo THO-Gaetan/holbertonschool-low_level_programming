@@ -1,5 +1,14 @@
 #include "dog.h"
 #include <stdlib.h>
+/**
+ * dog_change_data - Copies data from one string to another
+ * @data_changed: Destination string
+ * @data: Source string
+ * @increment: Starting index for copying
+ * @len: Length of data to copy
+ *
+ * Return: Pointer to the destination string
+ */
 char *dog_change_data(char *data_changed, char *data, int increment, int len)
 {
 	while (increment < len)
@@ -9,7 +18,14 @@ char *dog_change_data(char *data_changed, char *data, int increment, int len)
 	}
 	return (data_changed);
 }
-
+/**
+ * new_dog - Creates a new dog
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ *
+ * Return: Pointer to the new dog (Success), NULL otherwise
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
