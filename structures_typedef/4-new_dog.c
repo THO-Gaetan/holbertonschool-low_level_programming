@@ -9,6 +9,14 @@
  *
  * Return: Pointer to the destination string
  */
+int dog_strlen(int len, char *str)
+{
+	while (str[len])
+	{
+		len++;
+	}
+	return (len);
+}
 char *dog_change_data(char *data_changed, char *data, int increment, int len)
 {
 	while (increment < len)
@@ -29,13 +37,13 @@ char *dog_change_data(char *data_changed, char *data, int increment, int len)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
-	int len1, len2, nbname = 0, nbowner = 0;
+	int len1 = 0, len2 = 0, nbname = 0, nbowner = 0;
 
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
-	len1 = strlen(name);
-	len2 = strlen(owner);
+	len1 = dog_strlen(len1, name);
+	len2 = dog_strlen(len2, owner);
 	dog->name = malloc(sizeof(char) * (len1 + 1));
 	if (dog->name == NULL)
 	{
