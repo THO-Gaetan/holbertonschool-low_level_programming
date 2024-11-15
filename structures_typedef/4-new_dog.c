@@ -35,7 +35,7 @@ char *dog_change_data(char *data_changed, char *data, int increment, int len)
 		data_changed[increment] = data[increment];
 		increment++;
 	}
-	data_chaged[increment] = '\0';
+	data_changed[increment] = '\0';
 	return (data_changed);
 }
 /**
