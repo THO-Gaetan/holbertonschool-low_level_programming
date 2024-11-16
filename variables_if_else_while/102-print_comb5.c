@@ -10,13 +10,13 @@ int main(void)
 		{
 			i = un / 10;
 			j = un % 10;
-			putchar(i + 0);
-			putchar(j + 0);
+			putchar(i + '0');
+			putchar(j + '0');
 			putchar(' ');
 			i = deux / 10;
 			j = deux % 10;
-			putchar(i + 0);
-			putchar(j + 0);
+			putchar(i + '0');
+			putchar(j + '0');
 			if (i != 98 || j != 99)
 			{
 				putchar(',');
