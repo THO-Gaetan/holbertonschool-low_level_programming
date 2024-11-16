@@ -12,7 +12,7 @@
 int main(void)
 {
 	int un = 0, deux, i = 0, j = 0;
-	
+
 	while (un <= 98)
 	{
 		deux = un + 1;
