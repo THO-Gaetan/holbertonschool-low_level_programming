@@ -12,23 +12,15 @@ void print_times_table(int n)
 {
 	int col = 0, raw, res;
 
+	if (n > 15 || n < 0)
+		return;
 	while (col <= n)
 	{
-		if (n > 15 || n < 0)
-			return;
 		raw = 0;
 		while (raw <= n)
 		{
 			res = col * raw;
-			if (res >= 10 && res < 100)
-				_putchar((res / 10) + '0');
-			if (res >= 100)
-			{
-				_putchar(((res / 10) / 10) + '0');
-				_putchar(((res / 10) % 10) + '0');
-			}
-			_putchar((res % 10) + '0');
-			if (raw != n)
+			if (raw != 0)
 			{
 				_putchar(',');
 				if (res < 100)
@@ -37,6 +29,14 @@ void print_times_table(int n)
 					_putchar(' ');
 				_putchar(' ');
 			}
+			if (res >= 10 && res < 100)
+				_putchar((res / 10) + '0');
+			if (res >= 100)
+			{
+				_putchar(((res / 10) / 10) + '0');
+				_putchar(((res / 10) % 10) + '0');
+			}
+			_putchar((res % 10) + '0');
 			raw++;
 		}
 		_putchar('\n');
