@@ -10,13 +10,14 @@
  */
 int main(void)
 {
-	float i = 0, f1 = 1, f2 = 2, temp;
+	int i = 0;
+	long f1 = 1, f2 = 2, temp = 0;
 
 	while (i < 50)
 	{
 		if (i != 0)
 			printf(", ");
-		printf("%.0f", f1);
+		printf("%.0ld", f1);
 		temp = f2;
 		f2 += f1;
 		f1 = temp;
