@@ -2,41 +2,29 @@
 
 int main(void)
 {
-  int quatre, trois, deux, un;
-  for (quatre = 0; quatre <= 9; quatre++)
-    {
-      for (trois = 0; trois <= 8; trois++)
+	int un = 0, deux, i = 0, j = 0;
+	while (un <= 98)
 	{
-	  for (deux = 0; deux <= 9; deux++)
-	    {
-	      for (un = 0; un <=9; un++)
+		deux = un + 1;
+		while (deux <= 99)
 		{
-		  if (trois != 0 && un == 0 && deux == 0)
-		    {
-		      un = trois + 1;
-		    }
-		  else if (deux == 0 && un == 0)
-		    {
-		      un = un + 1;
-		    }
-		  if ((quatre == deux && trois == un) || (quatre == un && trois == deux))
-		    {
-		      un = un + 1;
-		    }
-		  if (!(un == 1 && deux == 0 && trois == 0 && quatre == 0))
-		    {
-		      putchar(',');
-		      putchar(' ');
-		    }
-		  putchar(quatre + '0');
-		  putchar(trois + '0');
-		  putchar(' ');
-		  putchar(deux + '0');
-		  putchar(un + '0');
+			i = un / 10;
+			j = un % 10;
+			putchar(i + 0);
+			putchar(j + 0);
+			putchar(' ');
+			i = deux / 10;
+			j = deux % 10;
+			putchar(i + 0);
+			putchar(j + 0);
+			if (i != 98 || j != 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		deux++;
 		}
-	    }
+	un++;
 	}
-    }
-  putchar('\n');
-  return (0);
+	return (0);
 }
