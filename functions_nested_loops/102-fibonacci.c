@@ -22,5 +22,6 @@ int main(void)
 		f1 = temp;
 		i++;
 	}
+	putchar('\n');
 	return (0);
 }
