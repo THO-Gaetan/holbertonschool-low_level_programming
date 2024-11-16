@@ -14,7 +14,9 @@ int main(void)
 
 	while (i < 50)
 	{
-		printf("%.0f, ", f1);
+		if (i != 0)
+			printf(", ");
+		printf("%.0f", f1);
 		temp = f2;
 		f2 += f1;
 		f1 = temp;
