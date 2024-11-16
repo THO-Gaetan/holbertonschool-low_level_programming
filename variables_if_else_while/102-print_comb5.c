@@ -1,5 +1,14 @@
 #include <stdio.h>
-
+/**
+ * main - Prints all possible combinations of two two-digit numbers
+ *
+ * Description: This program prints all possible combinations of two
+ * two-digit numbers, ranging from 00 to 99. The numbers are separated
+ * by a space, and the combinations are separated by a comma and a space.
+ * The combinations are printed in ascending order.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int un = 0, deux, i = 0, j = 0;
@@ -17,7 +26,7 @@ int main(void)
 			j = deux % 10;
 			putchar(i + '0');
 			putchar(j + '0');
-			if (i != 98 || j != 99)
+			if (un != 98 || deux != 99)
 			{
 				putchar(',');
 				putchar(' ');
