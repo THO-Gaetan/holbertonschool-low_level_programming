@@ -9,7 +9,7 @@
 * if they are null we will return 0, then we compare all element of the
 * array until cmp is not null then we return the position of the element
 * in the array.
-* Return: -1
+* Return: -1 at the end of the function
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -17,7 +17,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (size <= 0)
 		return (-1);
-	if (array == NULL || *cmp == NULL)
+	if (array == 0 || cmp == 0)
 		return (0);
 	while (i < size)
 	{
