@@ -28,11 +28,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-if ((strcmp(argv[3], "%") || strcmp(argv[3], "/")) && (num1 == 0 || num2 == 0))
-{
-	printf("Error\n");
-	exit(100);
-}
+	if ((strcmp(argv[2], "%") == 0 || strcmp(argv[2], "/") == 0) &&  num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	res = arg2(num1, num2);
 	printf("%d\n", res);
 	return (0);
