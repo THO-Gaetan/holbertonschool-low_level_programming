@@ -2,7 +2,7 @@
 /**
  * sum_them_all - start of the variadic function
  * @n : variable that contain the number of parameter who follow.
- * Description: Prints a quote about programming using puts function
+ * Description: return the sum of all the number listed after the int n
  *
  * Return: always return sum at the end
  */
