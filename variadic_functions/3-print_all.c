@@ -1,6 +1,13 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-
+/**
+ * print_all - start of your variadic function.
+ * @format : the variable that permit to find which type we need to print
+ * Description: we are creating a function that check the type of every element
+ * of the function using the format variable, then we print when we get the
+ * right type and we are looking for the next variable, then start with a new
+ * line.
+ */
 void print_all(const char * const format, ...)
 {
 	int i = 0;
@@ -8,7 +15,6 @@ void print_all(const char * const format, ...)
 	va_list ap;
 
 	va_start(ap, format);
-
 	while (format[i] != '\0')
 	{
 		switch (format[i])
