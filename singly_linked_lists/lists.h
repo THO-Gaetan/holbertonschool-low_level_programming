@@ -5,7 +5,7 @@ typedef struct lists
 {
 char *str;
 unsigned int len;
-struct lists *node;
+struct lists *next;
 } lists_t;
 
 size_t print_list(const list_t *h);
