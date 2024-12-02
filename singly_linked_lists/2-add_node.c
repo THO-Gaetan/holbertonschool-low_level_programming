@@ -1,20 +1,21 @@
 #include "lists.h"
+#include <string.h>
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *head;
 	list_t *new;
-	list_t hello = {str, str_len(str), NULL};
-	size_t n;
 
-	head = &hello;
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 	{
 		printf("Error\n");
-		return (-1);
+		return (NULL);
 	}
-	new->
+	new->str = strdup(str);
+	new->len = str_len(str);
+	new->next = *head;
+	*head = new;
+	return (*head);
 }
 
 size_t str_len(const char *str)
