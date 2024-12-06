@@ -1,51 +1,47 @@
 #include "main.h"
 /**
- * append_text_to_file - Reads a text file and prints it POSIX standard output
- * @filename: The name of the file to read
- * @letters: The number of letters it should read and print
+ * append_text_to_file - Appends text at the end of a file
+ * @filename: The name of the file
+ * @text_content: The NULL terminated string to add at the end of the file
  *
- * Return: The actual number of letters it could read and print
- *         0 if the file can not be opened or read, or if filename is NULL,
- *         or if write fails or does not write the expected amount of bytes
+ * Return: 1 on success and -1 on failure
  */
-ssize_t int append_text_to_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
-	char *box;
-	ssize_t bytes_read, bytes_written, total_written = 0;
+	ssize_t bytes_written;
 
 	if (filename == NULL)
-		return (0);
+		return (-1);
 
-	fd = open(filename, O_RDONLY);
+	fd = open(filename, O_WRONLY | O_APPEND);
 	if (fd == -1)
-		return (0);
+		return (-1);
 
-	box = malloc(sizeof(char) * letters);
-	if (box == NULL)
+	if (text_content != NULL)
 	{
-		close(fd);
-		return (0);
+		bytes_written = write(fd, text_content, str_len(text_content));
+		if (bytes_written == -1)
+		{
+			close(fd);
+			return (-1);
+		}
 	}
 
-	bytes_read = read(fd, box, letters);
-	if (bytes_read == -1)
-	{
-		free(box);
-		close(fd);
-		return (0);
-	}
-
-	bytes_written = write(STDOUT_FILENO, box, bytes_read);
-	if (bytes_written == -1 || bytes_written != bytes_read)
-	{
-		free(box);
-		close(fd);
-		return (0);
-	}
-
-	total_written = bytes_written;
-	free(box);
 	close(fd);
-	return (total_written);
+	return (1);
+}
+/**
+ * str_len - Calculate the length of a string
+ * @str: The string to measure
+ *
+ * Return: The length of the string
+ */
+int str_len(char *str)
+{
+	int len = 0;
+
+	while (str[len])
+		len++;
+	return (len);
 }
