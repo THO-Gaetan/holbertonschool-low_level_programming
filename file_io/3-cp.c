@@ -7,7 +7,13 @@
 
 void error_exit(int code, const char *message, const char *filename);
 void close_file(int fd);
-
+/**
+ * main - Copies the content of a file to another file
+ * @argc: Number of arguments
+ * @argv: Array of arguments
+ *
+ * Return: 0 on success, or exits with error code on failure
+ */
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
@@ -40,13 +46,21 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
+/**
+ * error_exit - Prints an error message and exits with a specific code
+ * @code: The exit code
+ * @message: The error message format string
+ * @filename: The filename to be inserted in the error message
+ */
 void error_exit(int code, const char *message, const char *filename)
 {
 	dprintf(STDERR_FILENO, message, filename);
 	exit(code);
 }
-
+/**
+ * close_file - Closes a file descriptor and exits if it fails
+ * @fd: The file descriptor to close
+ */
 void close_file(int fd)
 {
 	if (close(fd) == -1)
