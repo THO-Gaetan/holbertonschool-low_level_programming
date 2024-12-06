@@ -8,7 +8,7 @@
  *         0 if the file can not be opened or read, or if filename is NULL,
  *         or if write fails or does not write the expected amount of bytes
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	char *box;
